@@ -6,11 +6,11 @@ var connection = mysql.createConnection({
 	host: "localhost",
 	user: "root",
 	password: "",
-	database: "burgers_db"
+	database: "burger_db"
 });
 
 // connect to database, throw error if error, otherwise log the connection id
-connection.connect(function() {
+connection.connect(function(err) {
 	if (err) {
 		console.error("error connecting to database: " + err.stack);
 		return;
