@@ -2,14 +2,11 @@
 var express = require("express");
 var burger = require("../models/burger.js");
 
+// set up express router
 var router = express.Router();
 
+// get route for burgers/main page
 router.get("/", function(req, res) {
-	res.redirect("/burgers");
-});
-
-// get route for burgers
-router.get("/burgers", function(req, res) {
 	// using select all burger model to call mysql for getting all info
 	burger.selectAll(function(burgerInfo) {
 		// sends the callback info to index handlebars in an object with property burgers

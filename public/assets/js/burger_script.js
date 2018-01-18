@@ -28,11 +28,12 @@ $(document).ready(function() {
 		var newBurger = {
 			burger_name: $("#new-burger-input").val().trim()
 		};
-
+		// ajax call with post method with new burger data above
 		$.ajax("/burgers/new", {
 			type: "POST",
 			data: newBurger
 		}).done(function(data) {
+			// once done, log new burger added and reload the location
 			console.log("new burger added");
 			location.reload();
 		});
