@@ -21,7 +21,7 @@ var orm = {
 	// for devoured when user enters burger_name
 	insertOne: function(newBurger, callback) {
 		// build query
-		var queryString = "INSERT INTO burgers (burger_name) VALUES (??)";
+		var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
 		// log it
 		console.log(queryString);
 		// connect to mysql with that query, callback results if no error
@@ -34,7 +34,7 @@ var orm = {
 	// only update of this app is to set devoured to true if button clicked
 	updateOne: function(idToUpdate, callback) {
 		// build query
-		var queryString = "UPDATE burgers SET devoured = true WHERE id = ??";
+		var queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
 		// log it
 		console.log(queryString);
 		// connect to mysql with that query, callback results if no error
