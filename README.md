@@ -22,7 +22,7 @@ To create an app which utilizes a SQL database, an ORM, and follows the MVC desi
 Google Fonts and Bootsrap provide for a polished UI, and Heroku's hosting combined with JawsDB permit data persistent burgers.
 
 ## Installation
-- Visit the deployed site at [Eat-Da-Burger]() for immediate use.
+- Visit the deployed site at [Eat-Da-Burger](https://eat-da-burger-pzhw.herokuapp.com/) for immediate use.
 - Otherwise, fork and clone the GitHub repo to your machine.
 - Ensure that you have Node.js and MySQL installed on your machine
 - Set up the database using MySQL to run the schema.sql and seeds.sql files
